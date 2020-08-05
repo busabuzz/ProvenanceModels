@@ -1,48 +1,3 @@
-
-
-
-
-
-class OPMWModel:
-    def __init__(self):
-        pass
-
-
-class DataVariable:
-    def __init__(self):
-        pass
-
-
-class ParameterVariable:
-    def __init__(self):
-        pass
-
-
-class WorkflowExecutionAccount:
-    def __init__(self):
-        pass
-
-
-class WorkflowExecutionArtifact:
-    def __init__(self):
-        pass
-
-
-class WorkflowExecutionProcess:
-    def __init__(self):
-        pass
-
-
-class WorkflowTemplate:
-    def __init__(self):
-        pass
-
-
-class WorkflowTemplateArtifact:
-    def __init__(self):
-        pass
-
-
 class Adaptation:
 
     def __init__(self, name, instancetype, version, change, signature, timestamp, predecessor):
@@ -68,8 +23,3 @@ class ExecutionTrace:
         self.execution_sig = execution_sig
         self.timestamp = timestamp
         self.predecessor = predecessor  # hash of predecessor provenance object
-
-
-if __name__ == '__main__':
-    pass
-
