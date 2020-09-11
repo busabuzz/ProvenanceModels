@@ -1,0 +1,88 @@
+{
+  "adaptiveWorkflowTemplates": [
+    {
+      "label": "workflowtemplate 1",
+      "contributor": "Bas",
+      "modified": "01/01/2020",
+      "id": 488,
+      "adaptation": {"computable function": "full model"},
+      "predecessor": ""
+    },
+    {
+      "label": "workflowtemplate 2",
+      "contributor": "Ludwig",
+      "modified": "01/01/2020",
+      "id": 6128,
+      "adaptation": {"computable function": "full model"},
+      "predecessor": ""
+    },
+    {
+      "label": "workflowtemplate 1",
+      "contributor": "Ludwig",
+      "modified": "01/01/2020",
+      "id": 58380,
+      "adaptation": {"computable function":  "quick maths 1"},
+      "predecessor": 488
+    },
+    {
+      "label": "workflowtemplate 2",
+      "contributor": "Bas",
+      "modified": "01/01/2020",
+      "id": 75001,
+      "adaptation": {"computable function":  "quick maths 2"},
+      "predecessor": 6128
+    },
+    {
+      "label": "workflowtemplate 1",
+      "contributor": "Bas",
+      "modified": "01/01/2020",
+      "id": 15192,
+      "adaptation": {"computable function":  "quick maths 3"},
+      "predecessor": 488
+    },
+    {
+      "label": "workflowtemplate 2",
+      "contributor": "Ludwig",
+      "modified": "01/01/2020",
+      "id": 95059,
+      "adaptation": {"computable function":  "quick maths 4"},
+      "predecessor": 6128
+    },
+    {
+      "label": "workflowtemplate 1",
+      "contributor": "Ludwig",
+      "modified": "01/01/2020",
+      "id": 3054,
+      "adaptation": {"computable function":  "quick maths 5"},
+      "predecessor": 58380
+    },
+    {
+      "label": "workflowtemplate 2",
+      "contributor": "Bas",
+      "modified": "01/01/2020",
+      "id": 34428,
+      "adaptation": {"computable function":  "quick maths 6"},
+      "predecessor": 75001
+    }
+  ],
+  "adaptiveWorkflowExecutions": [
+    {
+        "status": "success",
+        "executedInWorkflowSystem": "",
+        "startTime": "",
+        "endTime": "",
+        "created": "",
+        "label": "run 1",
+        "templateId": 488
+    },
+    {
+        "status": "success",
+        "executedInWorkflowSystem": "",
+        "startTime": "",
+        "endTime": "",
+        "created": "",
+        "label": "run 2",
+        "templateId": 488
+    }
+  ]
+}

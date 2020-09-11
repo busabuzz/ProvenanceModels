@@ -1,8 +1,4 @@
 
-
-class OPMGraph:
-    pass
-
 class DataVariable:
     def __init__(self, label, isGeneratedBy, hasDimensionality, template):
         self.label = label
@@ -18,17 +14,18 @@ class ParameterVariable:
 
 
 class WorkflowExecutionAccount:
-    def __init__(self, hasStatus, executedInWorkflowSystem, hasExecutionDiagram, hasStartTime, hasEndTime, hasLabel):
-        self.hasStatus = hasStatus
+    def __init__(self, status, executedInWorkflowSystem, startTime, endTime, template, label="", executionDiagram=""):
+        self.hasStatus = status
         self.executedInWorkflowSystem = executedInWorkflowSystem
-        self.hasExecutionDiagram= hasExecutionDiagram
-        self.hasStartTime = hasStartTime
-        self.hasEndTime = hasEndTime
-        self.hasLabel = hasLabel
+        self.hasExecutionDiagram = executionDiagram
+        self.hasStartTime = startTime
+        self.hasEndTime = endTime
+        self.hasLabel = label
+        self.correspondsToTemplate = template
 
 
 class WorkflowExecutionArtifact:
-    def __init__(self, hasLocation, wasGeneratedBy, hasLabel, hasSize, hasWorkflowTemplateArtifact):
+    def __init__(self, hasLocation, wasGeneratedBy, hasSize, hasWorkflowTemplateArtifact, hasLabel=""):
         self.hasLocation = hasLocation
         self.wasGeneratedBy = wasGeneratedBy
         self.hasLabel = hasLabel
@@ -39,7 +36,7 @@ class WorkflowExecutionArtifact:
 class WorkflowExecutionProcess:
     def __init__(self, hasLabel, used, wasControlledBy, hasWorkflowTemplateProcess):
         self.hasLabel = hasLabel
-        self.used = used # WorkflowExecutionArtifact
+        self.used = used  # WorkflowExecutionArtifact
         self.wasControlledBy = wasControlledBy
         self.hasWorkflowTemplateProcess = hasWorkflowTemplateProcess
 
@@ -49,7 +46,7 @@ class WorkflowTemplate:
         self.hasLabel = hasLabel
         self.contributor = contributor
         self.modified = modified
-        self.hasVersion = hasVersion
+        self.hasVersion = hasVersion  # unique identifier
 
 
 class WorkflowTemplateArtifact:
@@ -61,11 +58,7 @@ class WorkflowTemplateArtifact:
 class WorkflowTemplateProces:
     def __init__(self, template, uses):
         self.template = template
-        self.uses = uses # data variable
+        self.uses = uses  # data variable
 
 
-
-
-if __name__ == '__main__':
-    pass
 
