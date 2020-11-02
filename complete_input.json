@@ -1,0 +1,48 @@
+{
+  "workflows": [
+    {
+      "id": 1,
+      "predecessor": "",
+      "adaptation_function": ""
+    },
+    {
+      "id": 2,
+      "predecessor": "1",
+      "adaptation_function": "2"
+
+    },
+    {
+      "id": 3,
+      "predecessor": "2",
+      "adaptation_function": "3"
+    }
+  ],
+  "executions": [
+    {
+      "id": 1,
+      "input": "1",
+      "output": "2",
+      "template": "1"
+    },
+    {
+      "id": 2,
+      "input": "2",
+      "output": "3",
+      "template": "2"
+
+    },
+    {
+      "id": 3,
+      "input": "3",
+      "output": "4",
+      "template": "2"
+    },
+    {
+      "id": 4,
+      "input": "3",
+      "output": "5",
+      "template": "3"
+    }
+  ]
+}
+
